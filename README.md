@@ -1,5 +1,15 @@
 # ago_minutes
 
+```
+implementation 'com.github.kaju02525:ago_minutes:1.0.0'
+maven { url 'https://jitpack.io' }
+
+
+[![](https://jitpack.io/v/kaju02525/ago_minutes.svg)](https://jitpack.io/#kaju02525/ago_minutes)
+
+
+```
+
 ## Examples:
 - 4 days ago
 - 15 years ago
