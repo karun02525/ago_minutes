@@ -20,18 +20,18 @@ class MainActivity : AppCompatActivity() {
        // val text: String = TimeAgo.using(timeInMillis)
 
 
-        Timer().scheduleAtFixedRate(MyTimerTask(),0,10000*6)
+        Timer().scheduleAtFixedRate(MyTimerTask(),0,10000*3)
 
     }
 
 
 inner class MyTimerTask : TimerTask() {
-    val LocaleBylanguageTag: Locale = Locale.forLanguageTag("en")
+    val LocaleBylanguageTag: Locale = Locale.forLanguageTag("hi")
     val messages =
         TimeAgoMessages.Builder().withLocale(LocaleBylanguageTag).build()
 
     override fun run() {
-        val text = using(1578445736000, messages)
+        val text = using(System.currentTimeMillis(), messages)
         runOnUiThread {
             tv.append("\n"+text)
         }
