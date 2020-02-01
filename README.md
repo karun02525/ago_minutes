@@ -4,7 +4,7 @@
 
 
 ```
-implementation 'com.github.kaju02525:ago_minutes:1.0.0'
+implementation 'com.github.kaju02525:ago_minutes:1.0.1'
 maven { url 'https://jitpack.io' }
 ```
 
